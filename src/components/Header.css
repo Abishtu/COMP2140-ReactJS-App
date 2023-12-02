@@ -1,0 +1,56 @@
+.Title {
+    display: flex;
+    align-items: center;
+    padding-left: 2.5%;
+}
+
+.TagLine {
+    margin-right: 2.5%;
+    font-size: smaller;
+}
+
+.Header {
+    background-image: linear-gradient(var(--purpleColorLighter), 
+                                      var(--blueColorDarker));
+    width: 100%;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--headerTextColor);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+/* The '*' means all child elements? */
+.Header * {
+    background-color: transparent;
+}
+
+.Header h2 {
+    padding-left: 3%;
+}
+
+.Header a {
+    color: var(--headerTextColor);
+}
+
+a:not(.HomeLink) {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border-width: thin;
+    border-style: solid;
+    padding: 0.35rem 0.7rem 0.35rem 0.7rem;
+    text-decoration: none;
+    font-size: medium;
+    border-color: var(--fgColor);
+    font-family: 'Ubuntu';
+}
+
+a:not(.HomeLink):hover {
+    background-color: var(--purpleColorLighter);
+    color: var(--bgColor);
+    border-style: solid;
+}
+
+/* a:not(.shared, .HomeLink) */

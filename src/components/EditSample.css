@@ -1,0 +1,21 @@
+.RowToggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.RowLabel {
+    text-align: end;
+    width: 7%;
+    margin-right: 1.5%;
+}
+
+.RowSequence {
+    width: 100%;
+    display: flex;
+    border-style: solid;
+    border-color: var(--fgColor);
+    border-bottom-width: thick;
+}

@@ -1,0 +1,15 @@
+.CreateSample {
+    justify-content: center;
+    border-color: var(--fgColorLighter);
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.CreateSample {
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-bottom-width: thick;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

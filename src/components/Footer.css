@@ -1,0 +1,7 @@
+.Footer {
+    background-color: var(--purpleColorLighter);
+    position: fixed;
+    bottom: 0px;
+    height: 0.75rem;
+    width: 100%;
+}

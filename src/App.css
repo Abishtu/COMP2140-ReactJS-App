@@ -1,0 +1,161 @@
+/* Import Ubuntu and DynaPuff fonts */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Variable assignments for light and dark mode */
+:root {
+  --purpleColorLighter: #A42DE8;
+  --blueColorLighter: #318AFF;
+  --blueColorDarker: #2D3DE8;
+  --bgColor: #ffffff;
+  --fgColor: #800080;
+  --fgColorLighter: rgba(128, 0, 128, 0.5);
+  --headerTextColor: #ffffff;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgColor: #422142;
+    --fgColor: #f0c4f0;
+    --fgColorLighter: rgba(210, 169, 210, 0.5);
+    --headerTextColor: var(--fgColor);
+  }
+}
+
+/* Main Container and Restyle HTML Tags */
+* {
+  background-color: var(--bgColor);
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding-bottom: 4rem;
+  margin-left: 2.5%;
+  margin-right: 5%;
+}
+
+/* Fonts */
+h4,
+button,
+span,
+p {
+  font-family: 'Ubuntu';
+}
+
+h2,
+h3,
+input {
+  font-family: 'DynaPuff';
+}
+
+h4 {
+  color: var(--fgColor);
+  height: 100%;
+}
+
+p {
+  padding-top: 0.5rem;
+  color: var(--fgColorLighter);
+  font-size: smaller;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: var(--fgColor);
+}
+
+button {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  border-width: thin;
+  border-style: solid;
+  padding: 0.35rem 0.7rem 0.35rem 0.7rem;
+  text-decoration: none;
+  font-size: medium;
+}
+
+button:hover {
+  background-color: var(--purpleColorLighter);
+  color: var(--bgColor);
+  border-style: solid;
+}
+
+button {
+  border-color: var(--fgColor);
+}
+
+.bright-button {
+  background-color: var(--fgColor);
+  color: var(--bgColor);
+}
+
+h3 {
+  color: var(--fgColor);
+}
+
+input {
+  font-size: larger;
+  color: var(--fgColor);
+  background-color: var(--fgColorLighter);
+  border-style: none;
+  border-radius: 0.5rem;
+  flex-grow: 1;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.75rem 2.5% 0.75rem 2.5%;
+}
+
+.toggle {
+  background-color: var(--bgColor);
+}
+
+.toggle-selected {
+  color: var(--bgColor);
+  background-color: var(--fgColor);
+}
+
+.toggle,
+.toggle-selected {
+  font-weight: bold;
+  border-width: thin;
+  border-color: var(--fgColorLighter);
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: -1px -1px -1px -1px;
+  height: 2.5rem;
+}
+
+.toggle:hover,
+.toggle-selected:hover {
+  background-color: var(--fgColorLighter);
+  border-color: var(--fgColorLighter);
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* Make input extend to whole of card width */
+  input {
+    width: 90%;
+  }
+
+  /* Wrap card details on smaller screens */
+  .SongSample {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .SongDetails {
+    align-self: flex-start;
+    padding-bottom: 1rem;
+  }
+
+  /* Reduces font size on smaller screens */
+  .toggle,
+  .toggle-selected {
+    font-size: small;
+  }
+
+}
+
+/* End Adjustments for Responsive Design */
